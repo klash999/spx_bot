@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: spx-bot-daily
+    runtime: python
+    buildCommand: ""
+    startCommand: "python spx_bot.py"
+    schedule: "0 13 * * *"  # تشغيل يوميًا الساعة 1 مساءً بتوقيت UTC
